@@ -646,26 +646,23 @@ func adminsCMD(_ string, u *User) {
 }
 
 func helpCMD(_ string, u *User) {
-	u.room.broadcast("", `Welcome to Devzat! Devzat is chat over SSH: github.com/quackduck/devzat  
-Because there's SSH apps on all platforms, even on mobile, you can join from anywhere.
+	u.room.broadcast("", `欢迎来到Devzat！Devzat通过SSH聊天：github.com/quackduck/devzat
+由于所有平台上，包括移动设备上都有 SSH 应用，你可以从任何地方加入。
 
-Run cmds to see a list of commands.
+运行 cmds 查看命令列表。
 
-Interesting features:
-* Rooms! Run cd to see all rooms and use cd #foo to join a new room.
-* Markdown support! Tables, headers, italics and everything. Just use \\n in place of newlines.
-* Code syntax highlighting. Use Markdown fences to send code. Run eg-code to see an example.
-* Direct messages! Send a quick DM using =user <msg> or stay in DMs by running cd @user.
-* Timezone support, use tz Continent/City to set your timezone.
-* Built in Tic Tac Toe and Hangman! Run tic or hang <word> to start new games.
-* Emoji replacements! \:rocket\: => :rocket: (like on Slack and Discord)
+有趣的功能:
+• 房间！运行 cd 查看所有房间，使用 cd #foo 加入新房间。
+• 支持 Markdown！表格、标题、斜体等一切。只需用 \n 代替换行符即可。
+• 代码语法高亮 使用 Markdown fences发送代码。运行 eg-code 查看示例。
+• 私聊！使用 =user <msg> 发送快速 DM，或通过运行 cd @user 留在 DM 中。
+• 支持时区，使用 tz Continent（州）/City（城市）设置时区。
 
-For replacing newlines, I often use https\://bulkseotools.com/add-remove-line-breaks.php.
+• 内置Tic Tan Toe（五子棋）和Hangman (猜单词）！运行 tic 或者 hang<word> 来开始新游戏
+• emoji 替换！:rocket: => 🚀 （就像在 Slack 和 Discord 上一样）
+• 输入 cmds 或者 rest 来查看所有命令。
 
-Join the Devzat discord server: https://discord.gg/yERQNTBbD5
-
-Made by Ishan Goel with feature ideas from friends.  
-Thanks to Caleb Denio for lending his server!`)
+本程序由 kpmark 提供他的服务器`)
 }
 
 func catCMD(line string, u *User) {

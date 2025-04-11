@@ -1,0 +1,8 @@
+port: 11451
+alt_port: 8080
+profile_port: 5555
+scrollback: 16
+data_dir: devzat-data
+key_file: devzat-sshkey
+admins: {}
+integration_config: ""
